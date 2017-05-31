@@ -1,0 +1,23 @@
+.drawing_area
+{
+    margin-left : 10px;
+    border-radius: 10px;
+    display: block;
+    float: left;
+    background-color: #ECF0F1;
+}
+
+.shape_circle_settings, .shape_triangle_settings, .shape_rectangle_settings
+{
+    display: none;
+}
+
+.menu
+{
+    border-radius: 10px;
+    padding: 20px;
+    display: block;
+    float: left;
+
+    background-color: #ECF0F1;
+}

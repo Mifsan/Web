@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; windows-1251" />
+    <link rel="stylesheet" href="build/bootstrap.min.css">
+    <title>Lab2</title>
+  </head>
+
+  <body>
+    <div class = "container">
+      <div class = "row">
+        <div class = "menu span4">
+          <form id = "shape_settings" onsubmit = "drawShape(); return false;">
+            <div class = "shape_list_block">
+              <select id = "shape_list" onchange="checkSelector()">
+                <option value = "circle">Circle</option>
+                <option value = "triangle">Triangle</option>
+                <option value = "rectangle">Rectangle</option>
+              </select>
+            </div>
+            <div class = "shape_main_settings">
+              <div class = "field_name">Fill Color</div>
+              <input type = "text" id = "fill_color" onchange = "drawShape()">
+              <div class = "field_name">Border Color</div>
+              <input type = "text" id = "border_color" onchange = "drawShape()">
+            </div>
+            <div class = "shape_circle_settings" id = "shape_circle_settings">
+              <div class = "field_name">Radius</div>
+              <input type = "text" id = "circle_radius" onchange = "drawShape()">
+              <div class = "field_name">Coordinate X</div>
+              <input type = "text" id = "circle_coordinateX" onchange = "drawShape()">
+              <div class = "field_name">Coordinate Y</div>
+              <input type = "text" id = "circle_coordinateY" onchange = "drawShape()">
+            </div>
+            <div class = "shape_triangle_settings" id = "shape_triangle_settings">
+              <div class = "field_name">Coordinate X1</div>
+              <input type = "text" id = "triangle_coordinateX1" onchange = "drawShape()">
+              <div class = "field_name">Coordinate Y1</div>
+              <input type = "text" id = "triangle_coordinateY1" onchange = "drawShape()">
+              <div class = "field_name">Coordinate X2</div>
+              <input type = "text" id = "triangle_coordinateX2" onchange = "drawShape()">
+              <div class = "field_name">Coordinate Y2</div>
+              <input type = "text" id = "triangle_coordinateY2" onchange = "drawShape()">
+              <div class = "field_name">Coordinate X3</div>
+              <input type = "text" id = "triangle_coordinateX3" onchange = "drawShape()">
+              <div class = "field_name">Coordinate Y3</div>
+              <input type = "text" id = "triangle_coordinateY3" onchange = "drawShape()">
+            </div>
+            <div class = "shape_rectangle_settings" id = "shape_rectangle_settings">
+              <div class = "field_name">Coordinate X1</div>
+              <input type = "text" id = "rectangle_coordinateX1" onchange = "drawShape()">
+              <div class = "field_name">Coordinate Y1</div>
+              <input type = "text" id = "rectangle_coordinateY1" onchange = "drawShape()">
+              <div class = "field_name">Coordinate X2</div>
+              <input type = "text" id = "rectangle_coordinateX2" onchange = "drawShape()">
+              <div class = "field_name">Coordinate Y2</div>
+              <input type = "text" id = "rectangle_coordinateY2" onchange = "drawShape()">
+            </div>
+            <button type = "submit" class = "btn btn-default" value = "draw" id = "draw_button">draw</button>
+          </form>
+        </div>
+        <div class="span8">
+          <canvas id="canvas" class="drawing_area span10" width="500" height="500">Обновите браузер</canvas>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="build/built.js"></script>
+    <script>start()</script>
+  </body>
+</html>
