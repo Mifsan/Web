@@ -59,7 +59,7 @@ export class Circle extends Shape {
         ctx.fillStyle = "#000000";
         ctx.font = "bold 12px sans-serif";
         ctx.fillText("perimeter: " + this.calculatePerimeter().toFixed(2), 380, 450);
-        ctx.fillText("area: " + this.calculatePerimeter().toFixed(2), 380, 470);
+        ctx.fillText("area: " + this.calculateArea().toFixed(2), 380, 470);
     }
 
     public calculateArea(): number {
