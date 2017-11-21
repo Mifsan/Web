@@ -1,0 +1,3 @@
+{
+  "ignorePaths": ["src/libs/*", "src/systemjs/*"]
+}
